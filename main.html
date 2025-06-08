@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palavra Repetida</title>
+        <style>
+
+            *{padding: 0;margin: 0px;}
+
+            body{overflow: hidden;
+                background: linear-gradient(to bottom right, #fbc2eb, #a6c1ee, #fff5d7);
+                font-family: "Great Vibes", cursive;
+            }
+
+            .Tfundo{
+                font-size: 24px;
+                display: flex;
+                font-weight: bold;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                height: 100vh;
+    		}
+
+            .Ffundo{
+                margin: 5px 2px;
+                transform: rotate(-10deg);
+            }
+
+            .Ima{
+                background-color: #9b9b9bcf;
+                position: absolute;
+                top: 5%;
+                left: 5%;
+                width: 90%;
+                height: 90%;
+                border-radius: 5%;
+                overflow: auto;
+            }
+
+            .Nome{
+                font-size: 38px;
+                color: #e52b77; /* um rosa romântico */
+                text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+                text-align: center;
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            .img{
+                display: flex;
+                justify-content: space-evenly;
+                height: 30%;
+                margin: 5px;
+            }
+
+            .img img{
+                border-radius: 50%;
+            }
+
+            .texto{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 20px;
+                padding: 5px;
+            }
+
+            .texto :not(:first-of-type):not(:last-of-type){
+                text-indent: 15px;
+            }
+
+            .texto p {
+                padding: 5px;
+            }
+
+            .assin{
+                position: absolute;
+                right: 3%;
+                bottom: 1%;
+            }
+
+            /*Coração*/
+            .heart {
+                width: 15px;
+                height: 14px;
+                position: relative;
+                transform: rotate(-45deg);
+                background: #e25585;
+                animation: pulse 1s infinite;
+                top: 5px;
+                }
+
+            .heart::before,
+            .heart::after {
+                content: "";
+                width: 15px;
+                height: 14px;
+                position: absolute;
+                background: #e25585;
+                border-radius: 50%;
+            }
+
+            .heart::before {
+                top: -10px;
+                left: 0;
+            }
+
+            .heart::after {
+                left: 10px;
+                top: 0;
+            }
+
+            @keyframes pulse {
+                0%, 100% {
+                transform: rotate(-45deg) scale(1);
+            }
+            50% {
+                transform: rotate(-45deg) scale(1.2);
+            }
+
+            /*Fim coração*/
+
+        </style>
+    </head>
+    <body>
+        <div class="Tfundo">
+            <div class="Ffundo" style="color: red;">|Magnifica|</div>
+            <div class="Ffundo" style="color: blue;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: green;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: orange;">|Te amo|</div>
+            <div class="Ffundo" style="color: purple;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: pink;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: brown;">|Linda|</div>
+            <div class="Ffundo" style="color: yellow;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: cyan;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: magenta;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: red;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: blue;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: green;">|Linda|</div>
+            <div class="Ffundo" style="color: orange;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: purple;">|Magnifica|</div>
+            <div class="Ffundo" style="color: pink;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: brown;">|Te amo|</div>
+            <div class="Ffundo" style="color: yellow;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: cyan;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: magenta;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: red;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: blue;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: green;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: orange;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: purple;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: pink;">|Linda|</div>
+            <div class="Ffundo" style="color: brown;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: yellow;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: cyan;">|Magnifica|</div>
+            <div class="Ffundo" style="color: magenta;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: red;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: blue;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: green;">|Te amo|</div>
+            <div class="Ffundo" style="color: orange;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: purple;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: pink;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: brown;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: yellow;">|Linda|</div>
+            <div class="Ffundo" style="color: cyan;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: magenta;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: red;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: blue;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: green;">|Magnifica|</div>
+            <div class="Ffundo" style="color: orange;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: purple;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: pink;">|Linda|</div>
+            <div class="Ffundo" style="color: brown;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: yellow;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: cyan;">|Te amo|</div>
+            <div class="Ffundo" style="color: magenta;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: red;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: blue;">|Magnifica|</div>
+            <div class="Ffundo" style="color: green;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: orange;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: purple;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: pink;">|Linda|</div>
+            <div class="Ffundo" style="color: brown;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: yellow;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: cyan;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: magenta;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: red;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: blue;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: green;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: orange;">|Te amo|</div>
+            <div class="Ffundo" style="color: purple;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: pink;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: brown;">|Magnifica|</div>
+            <div class="Ffundo" style="color: yellow;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: cyan;">|Linda|</div>
+            <div class="Ffundo" style="color: magenta;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: red;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: blue;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: green;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: orange;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: purple;">|Magnifica|</div>
+            <div class="Ffundo" style="color: pink;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: brown;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: yellow;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: cyan;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: magenta;">|Linda|</div>
+            <div class="Ffundo" style="color: red;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: blue;">|Magnifica|</div>
+            <div class="Ffundo" style="color: green;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: orange;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: purple;">|Te amo|</div>
+            <div class="Ffundo" style="color: pink;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: brown;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: yellow;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: cyan;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: magenta;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: red;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: blue;">|Magnifica|</div>
+            <div class="Ffundo" style="color: green;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: orange;">|Linda|</div>
+            <div class="Ffundo" style="color: purple;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: pink;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: brown;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: yellow;">|Te amo|</div>
+            <div class="Ffundo" style="color: cyan;">|Carolina Pereira|</div>
+            <div class="Ffundo" style="color: magenta;">|Carolina Pereira|</div>
+
+        </div>
+        <div class="Ima">
+            <div class="Nome">
+                <div class="heart"></div>
+                    <p>|Carolina Pereira|</p>
+                <div class="heart"></div>
+            </div>
+
+            <div class="img"><img src="c.jpg"></div>
+
+            <div class="texto">
+                <p>Meu amor,</p><p>  Às vezes fico pensando em como a sorte sorriu pra mim no dia em que você entrou na minha vida. Desde então, tudo parece mais colorido, mais leve, mais bonito—porque você está ao meu lado.</p><p>  Te amo não apenas pelo que você é, mas pelo que eu sou quando estou com você. Com você, eu sou mais feliz, mais calmo, mais eu. Cada sorriso seu acalma meu mundo, cada abraço seu é um lar.</p><p>  Obrigada por ser meu porto seguro, meu riso fácil, minha pessoa favorita. Eu te amo em cada detalhe, em cada pensamento e em cada plano de futuro.</p><p>Com todo o amor que há em mim.</p>
+            </div> 
+        </div>
+
+        <div class="assin">Leonardo do Monte</div>
+    </body>
+</html>
